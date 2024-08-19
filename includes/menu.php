@@ -42,7 +42,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-link="plan" href="javascript:;">
+                        <a class="nav-link" data-link="plans" href="javascript:;">
                             <span class="mainText">
                               plans
                             </span>

@@ -1,0 +1,297 @@
+@media (max-width: 1440px) {
+    html {
+        font-size: 14px;
+    }
+
+    .mainSec .content {
+        top: calc(200px + 250px);
+        left: 15vw;
+    }
+
+    .mainSec .frontImg h1 {
+        top: 200px;
+        left: 15vw;
+    }
+
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .mainSec .frontImg h1 {
+        top: 130px;
+    }
+
+    .mainSec .content {
+        top: calc(130px + 210px);
+    }
+
+    .mainSec h1 {
+        font-size: 20rem;
+    }
+
+    .badgeBtn {
+        min-height: 400px;
+    }
+
+    .coaching .mainSec .content h1 {
+        font-size: 16rem;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    html {
+        font-size: 13px;
+    }
+
+    .plans .mainSec .content h1 {
+        font-size: 45rem;
+    }
+
+    .badgeBtn.innerBtn {
+        transform: translateY(10%);
+        top: 10%;
+        writing-mode: unset;
+        min-height: auto;
+        max-width: none;
+        height: 70px;
+        width: 400px;
+    }
+
+    .badgeBtn.innerBtn::before {
+        bottom: auto;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+
+    .badgeBtn.innerBtn:hover::before {
+        right: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 991.98px) {
+    html {
+        font-size: 12px;
+    }
+
+    .mainSec .content {
+        top: calc(130px + 173px);
+    }
+
+    .mainSec .content {
+        top: calc(130px + 173px);
+    }
+
+    .pageWrapper {
+        position: sticky;
+        transform: none !important;
+        inset: auto;
+        top: 0;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .preloaderCont .preloaderImg img {
+        width: 65%;
+        margin: auto;
+        display: block;
+    }
+
+    .preloaderCont .preloaderImg .logoIcon svg {
+        width: 65%;
+        margin: auto;
+        display: block;
+    }
+
+    .preloaderCont .preloaderImg .logoIcon {
+        top: -33px;
+        left: 52%;
+        transform: translateX(-50%);
+    }
+
+    .join .mainSec h1 {
+        width: 80%;
+        font-size: 7rem;
+    }
+
+    .badgeBtn {
+        min-height: 350px;
+        max-width: 50px;
+    }
+
+    .badgeBtn::before {
+        width: 40px;
+        height: 40px;
+    }
+
+    .plansSec .planCard {
+        height: 450px;
+    }
+
+    .trainingCard {
+        height: 450px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    html {
+        font-size: 14px;
+    }
+
+    .mainSec .frontImg h1 {
+        left: 0;
+    }
+
+    .mainSec .content {
+        left: 0;
+    }
+
+    .mainSec h1 {
+        font-size: 17rem;
+    }
+
+    .coaching .mainSec .content h1 {
+        font-size: 10rem;
+    }
+
+    .plans .mainSec .content h1 {
+        font-size: 30rem;
+    }
+
+    .join .mainSec h1 {
+        font-size: 6rem;
+    }
+
+    .plansSec .planCard .content h3 {
+        font-size: 5rem;
+    }
+
+    .plansSec .planCard {
+        height: 350px;
+    }
+
+    footer .row {
+        gap: 2rem 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    html {
+        font-size: 13px;
+    }
+
+    .home .mainSec .frontImg h1, .home .mainSec .content:not(.mobile) {
+        display: none;
+    }
+
+    .mainSec .content {
+        bottom: 0;
+        top: 70%;
+        left: 2vw;
+        width: 100%;
+        transform: translateY(-70%);
+    }
+
+    .mainSec .content h1 {
+        font-size: 12rem;
+    }
+
+    .coaching .mainSec .content, .class .mainSec .content {
+        transform: none;
+    }
+
+    .coaching .mainSec .content h1, .class .mainSec .content h1 {
+        font-size: 12rem;
+    }
+
+    .coaching .mainSec .content h1 {
+        font-size: 8rem;
+    }
+
+    .coaching .mainSec .content {
+        padding-bottom: 4rem;
+    }
+
+    .plans .mainSec .content h1 {
+        text-align: center;
+        font-size: 25rem;
+    }
+
+    .join .mainSec h1 {
+        font-size: 5rem;
+    }
+
+    .plansSec .row {
+        gap: 2rem 0;
+    }
+
+    .plansSec .planCard {
+        height: 200px;
+    }
+
+    .trainingCard {
+    }
+
+    .classCard .content h3, .trainingCard .content h3 {
+        font-size: 1.5rem;
+    }
+
+    .trainingCard .content h4 {
+        font-size: 1.5rem;
+    }
+
+    .secHeading {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 11px;
+    }
+
+    .coaching .mainSec .content h1 {
+        font-size: 5rem;
+        align-items: center;
+        line-height: 1;
+    }
+
+    .badgeBtn {
+        max-width: none;
+        min-height: auto;
+        height: 50px;
+        writing-mode: initial;
+        transform: none;
+        bottom: 150px;
+        top: auto;
+        width: 90%;
+    }
+
+    .badgeBtn::before {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+    }
+
+    .coaching .mainSec .content {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home .mainSec .content h1 {
+        text-align: center;
+        font-size: 8rem;
+        line-height: 1;
+    }
+
+    .join .mainSec h1 {
+        font-size: 4rem;
+    }
+}

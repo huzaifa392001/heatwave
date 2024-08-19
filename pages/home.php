@@ -17,5 +17,12 @@
                 resolve
             </h1>
         </div>
+        <div class="content mobile">
+            <h1>
+                strengthen
+                your
+                resolve
+            </h1>
+        </div>
     </section>
 </div>

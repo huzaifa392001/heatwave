@@ -43,7 +43,7 @@ html.lenis, html.lenis body {
 }
 
 .lenis.lenis-stopped {
-    overflow: hidden;
+    overflow: clip;
 }
 
 .lenis.lenis-smooth iframe {
@@ -104,8 +104,10 @@ figure {
     margin: 0;
 }
 
-.container {
-    max-width: 1440px;
+@media screen and (min-width: 1500px){
+    .container {
+        max-width: 1440px;
+    }
 }
 
 /*buttons*/
@@ -122,7 +124,7 @@ figure {
     justify-content: center;
     font-weight: 600;
     position: relative;
-    overflow: hidden;
+    overflow: clip;
     z-index: 1;
     padding: 0 1.5rem;
     transition: 0.5s;
@@ -174,6 +176,10 @@ figure {
 section {
     position: relative;
     padding: 5rem 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .row [class*="col-"] {
@@ -181,12 +187,12 @@ section {
 }
 
 .secHeading {
-    text-align: left;
     line-height: 1.2;
-    font-size: 3.75rem;
-    color: var(--black);
-    text-transform: capitalize;
+    font-size: 8rem;
+    color: var(--white);
     font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .subHeading {
@@ -214,7 +220,7 @@ section {
 
 .preloaderCont .preloaderImg {
     position: relative;
-    overflow: hidden;
+    overflow: clip;
 }
 
 .preloaderCont .preloaderImg .preloaderMask {
@@ -235,14 +241,13 @@ header {
     position: fixed;
     top: 10px;
     width: 100%;
-    z-index: 11;
+    z-index: 11111;
 }
 
 .mainSec {
     padding: 0;
     height: 100vh;
-    overflow: hidden;
-    transition: all 1s ease-in-out;
+    overflow: clip;
     width: 100%;
 }
 
@@ -259,7 +264,7 @@ header {
 .mainSec .bgImg img {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: top;
 }
 
@@ -273,7 +278,7 @@ header .navbar-nav .nav-item .nav-link {
     position: relative;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow: clip;
 }
 
 header nav.navbar {
@@ -324,7 +329,7 @@ header .container {
 }
 
 .mainSec h1 .word {
-    overflow: hidden;
+    overflow: clip;
 }
 
 .mainSec .frontImg h1 {
@@ -341,7 +346,7 @@ header .container {
 .mainSec .frontImg img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     margin-top: auto;
     user-select: none;
     pointer-events: none;
@@ -364,11 +369,6 @@ header .navbar-nav .nav-item .nav-link span.mainText {
     position: static;
     color: var(--white);
     transform: translate(0);
-}
-
-body {
-    height: 100vh;
-    overflow-y: clip;
 }
 
 .pageWrapper {
@@ -414,26 +414,34 @@ body {
     object-fit: cover;
 }
 
-.classCard {
+.classCard,
+.trainingCard {
     width: 100%;
-    overflow: hidden;
+    overflow: clip;
     height: 400px;
     position: relative;
     display: block;
 }
 
-.classCard .cardImg img {
+.trainingCard {
+    height: 585px;
+}
+
+.classCard .cardImg img,
+.trainingCard .cardImg img {
     width: 100%;
     object-fit: cover;
     height: 100%;
     transition: all 0.3s ease;
 }
 
-.classCard .cardImg {
+.classCard .cardImg,
+.trainingCard .cardImg {
     height: 100%;
 }
 
-.classCard .content {
+.classCard .content,
+.trainingCard .content {
     position: absolute;
     bottom: 40px;
     width: 100%;
@@ -443,7 +451,8 @@ body {
     z-index: 1;
 }
 
-.classCard .content h2 {
+.classCard .content h3,
+.trainingCard .content h3 {
     color: var(--white);
     font-size: 2rem;
     text-transform: uppercase;
@@ -453,20 +462,40 @@ body {
     text-align: center;
 }
 
-.classCard::before {
+.trainingCard .content {
+    flex-direction: column;
+}
+
+.trainingCard .content h4 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Morganite Black', serif;
+    letter-spacing: 2px;
+}
+
+.classCard::before,
+.trainingCard::before {
     content: '';
     position: absolute;
     inset: 0;
     background: linear-gradient(to bottom, transparent 40%, rgb(253 88 6 / 70%), var(--secondary-color));
-    height: 400px;
+    height: 100%;
     z-index: 1;
+    transition: all 0.3s ease;
 }
 
-.classesSec .row {
+.classCard:hover::before,
+.trainingCard:hover::before {
+    transform: translateY(100%);
+}
+
+.classesSec .row, .trainerSec .row {
     gap: 2rem 0;
 }
 
-.classCard:hover .cardImg img {
+.classCard:hover .cardImg img,
+.trainingCard:hover .cardImg img {
     transform: scale(1.25);
 }
 
@@ -488,4 +517,246 @@ body {
 
 .horizontalCont > * {
     width: 100%;
+}
+
+.badgeBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    left: 15px;
+    writing-mode: tb;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    color: var(--black);
+    z-index: 1111;
+'Gotham', font-family: sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(to top, var(--theme-color), var(--theme-color));
+    max-width: 70px;
+    width: 100%;
+    overflow: clip;
+}
+
+.badgeBtn::before {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background: var(--black);
+    border-radius: 100%;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.badgeBtn:hover::before {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    border-radius: 40px;
+    border-color: var(--theme-color);
+}
+
+.badgeBtn span {
+    position: relative;
+    z-index: 1;
+}
+
+.badgeBtn:hover {
+    color: var(--white);
+}
+
+.plans .mainSec .content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.plans .mainSec .content h1 {
+    color: var(--theme-color);
+    font-size: 56rem;
+    font-family: 'Morganite Extra Bold', sans-serif;
+    opacity: 0.5;
+}
+
+.plans .mainSec .bgImg::before {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.plans .mainSec .bgImg img {
+    object-fit: cover;
+}
+
+.join .mainSec h1 {
+    font-size: 8.75rem;
+    text-align: center;
+    line-height: 1.2;
+    width: 65%;
+    color: var(--theme-color);
+    letter-spacing: 0;
+}
+
+.join .mainSec .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    transform: none;
+}
+
+.join .mainSec .bgImg::before {
+    background: linear-gradient(to right, black, #0005, black);
+}
+
+.plansSec,
+.joinNowSec {
+    background-image: url("../images/planBg.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.plansSec .planCard {
+    height: 650px;
+    border: 3px solid var(--theme-color);
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plansSec .planCard.middle {
+    background: linear-gradient(to bottom, var(--theme-color), var(--theme-color));
+}
+
+.plansSec .planCard.last {
+    background: linear-gradient(to bottom, var(--theme-color), var(--theme-color), var(--secondary-color));
+}
+
+.plansSec .planCard .content h3 {
+    font-size: 8rem;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'Morganite Black', serif;
+}
+
+.plansSec .planCard.first .content h3 {
+    color: var(--white);
+}
+
+.mainSec .bottomImg {
+    position: absolute;
+    bottom: -110px;
+}
+
+.inputCont input, .inputCont textarea {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    font-family: 'Gotham', sans-serif;
+    color: var(--white);
+    font-size: 1.25rem;
+    outline: none;
+    min-height: 60px;
+}
+
+.inputCont input::placeholder, .inputCont textarea::placeholder {
+    color: var(--white);
+}
+
+.joinNowSec form .row {
+    gap: 2rem 0;
+}
+
+.joinNowSec form .submitBtn {
+    background: linear-gradient(45deg, var(--theme-color), var(--theme-color));
+    border: 1px solid var(--white);
+    font-family: 'Gotham', sans-serif;
+    color: var(--white);
+    text-transform: capitalize;
+    padding: 0.5rem 2rem;
+    font-size: 1.25rem;
+    margin: 1.5rem auto 0;
+    display: block;
+    background-size: 100% 0;
+    background-repeat: no-repeat;
+    background-position: top right;
+    transition: all 0.3s ease;
+}
+
+.joinNowSec form .submitBtn:hover {
+    background-size: 100% 100%;
+}
+
+.joinNowSec {
+    flex-direction: column;
+    align-items: unset;
+    background: #000;
+}
+
+footer {
+    margin-top: 5rem;
+}
+
+footer .logo img {
+    width: 250px;
+    margin: auto;
+    display: block;
+}
+
+footer .socialList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0 0;
+}
+
+footer .socialList a svg {
+    width: 30px;
+    height: 30px;
+}
+
+footer h3 {
+    color: var(--white);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 600;
+    margin: 0 0 1rem;
+}
+
+footer .list li a {
+    color: var(--white);
+    font-family: 'Gotham', sans-serif;
+    font-size: 1.5rem;
+}
+
+footer .list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer .list li a:hover {
+    color: var(--theme-color);
+}
+
+footer ul li {
+    color: var(--white);
+    font-family: 'Gotham', sans-serif;
+    font-size: 1.125rem;
+}
+
+footer ul:not(.list) li + li {
+    margin: 0.5rem 0 0;
+}
+
+footer ul li span {
+    font-weight: 600;
 }

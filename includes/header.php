@@ -14,6 +14,7 @@ if (file_exists(dirname(__FILE__) . '/../includes/config.php')) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/assets/css/plugins.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
 
     <?php
     // Define the titles for different pages
@@ -83,4 +84,4 @@ if (file_exists(dirname(__FILE__) . '/../includes/config.php')) {
     ?>
     <title><?php echo htmlspecialchars($title, ENT_QUOTES, 'UTF-8'); ?></title>
 </head>
-<body>
+<body data-barba="wrapper">
