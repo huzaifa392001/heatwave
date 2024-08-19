@@ -13,8 +13,12 @@
 
 @font-face {
     font-family: 'Morganite Extra Bold';
-    src: url('../web-font/Morganite-ExtraBold.woff2') format('woff2'),
-    url('../web-font/Morganite-ExtraBold.woff') format('woff');
+    src: url('../web-font/Morganite-ExtraBold.eot');
+    src: url('../web-font/Morganite-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../web-font/Morganite-ExtraBold.woff2') format('woff2'),
+    url('../web-font/Morganite-ExtraBold.woff') format('woff'),
+    url('../web-font/Morganite-ExtraBold.ttf') format('truetype'),
+    url('../web-font/Morganite-ExtraBold.svg#Morganite-ExtraBold') format('svg');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -22,8 +26,12 @@
 
 @font-face {
     font-family: 'Morganite Medium';
-    src: url('../web-font/Morganite-Medium.woff2') format('woff2'),
-    url('../web-font/Morganite-Medium.woff') format('woff');
+    src: url('../web-font/Morganite-Medium.eot');
+    src: url('../web-font/Morganite-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../web-font/Morganite-Medium.woff2') format('woff2'),
+    url('../web-font/Morganite-Medium.woff') format('woff'),
+    url('../web-font/Morganite-Medium.ttf') format('truetype'),
+    url('../web-font/Morganite-Medium.svg#Morganite-Medium') format('svg');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -31,8 +39,12 @@
 
 @font-face {
     font-family: 'Morganite Bold';
-    src: url('../web-font/Morganite-Bold.woff2') format('woff2'),
-    url('../web-font/Morganite-Bold.woff') format('woff');
+    src: url('../web-font/Morganite-Bold.eot');
+    src: url('../web-font/Morganite-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../web-font/Morganite-Bold.woff2') format('woff2'),
+    url('../web-font/Morganite-Bold.woff') format('woff'),
+    url('../web-font/Morganite-Bold.ttf') format('truetype'),
+    url('../web-font/Morganite-Bold.svg#Morganite-Bold') format('svg');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -40,8 +52,12 @@
 
 @font-face {
     font-family: 'Morganite Black';
-    src: url('../web-font/Morganite-Black.woff2') format('woff2'),
-    url('../web-font/Morganite-Black.woff') format('woff');
+    src: url('../web-font/Morganite-Black.eot');
+    src: url('../web-font/Morganite-Black.eot?#iefix') format('embedded-opentype'),
+    url('../web-font/Morganite-Black.woff2') format('woff2'),
+    url('../web-font/Morganite-Black.woff') format('woff'),
+    url('../web-font/Morganite-Black.ttf') format('truetype'),
+    url('../web-font/Morganite-Black.svg#Morganite-Black') format('svg');
     font-weight: 900;
     font-style: italic;
     font-display: swap;

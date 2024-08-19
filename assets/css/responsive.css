@@ -105,13 +105,13 @@
     }
 
     .preloaderCont .preloaderImg .logoIcon svg {
-        width: 65%;
+        width: 28%;
         margin: auto;
         display: block;
     }
 
     .preloaderCont .preloaderImg .logoIcon {
-        top: -33px;
+        top: -63px;
         left: 52%;
         transform: translateX(-50%);
     }
