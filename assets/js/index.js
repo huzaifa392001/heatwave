@@ -26,9 +26,9 @@ barba.init({
 
 function allFunc(data) {
     let page = data.next.namespace
-    mm.add('min-width: 992px', () => {
+    if (window.innerWidth > 991) {
         headerNavAnim(page)
-    })
+    }
     lenisSetup();
 }
 

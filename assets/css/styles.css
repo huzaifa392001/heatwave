@@ -104,7 +104,7 @@ figure {
     margin: 0;
 }
 
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1500px) {
     .container {
         max-width: 1440px;
     }
@@ -759,4 +759,8 @@ footer ul:not(.list) li + li {
 
 footer ul li span {
     font-weight: 600;
+}
+
+.mainSec .content.mobile {
+    display: none;
 }

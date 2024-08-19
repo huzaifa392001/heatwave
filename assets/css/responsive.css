@@ -191,6 +191,10 @@
         display: none;
     }
 
+    .mainSec .content.mobile {
+        display: block;
+    }
+
     .mainSec .content {
         bottom: 0;
         top: 70%;
