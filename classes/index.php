@@ -11,7 +11,7 @@
 
             <section class="mainSec ">
                 <figure class="bgImg">
-                    <img src="/assets/images/classBg.jpg" alt="">
+                    <img src="/heatwave/assets/images/classBg.jpg" alt="">
                 </figure>
                 <div class="content">
                     <h1>
@@ -26,7 +26,7 @@
                 </span>
                     </h1>
                 </div>
-                <a href="/" class="badgeBtn">
+                <a href="/heatwave" class="badgeBtn">
                     <span>
                         Back to home
                     </span>
@@ -44,7 +44,7 @@
                         <div class="col-md-4 col-sm-6">
                             <a href="#" class="classCard">
                                 <figure class="cardImg">
-                                    <img src="/assets/images/class1.jpg" alt="">
+                                    <img src="/heatwave/assets/images/class1.jpg" alt="">
                                 </figure>
                                 <div class="content">
                                     <h3>Stretch</h3>
@@ -54,7 +54,7 @@
                         <div class="col-md-4 col-sm-6">
                             <a href="#" class="classCard">
                                 <figure class="cardImg">
-                                    <img src="/assets/images/class2.jpg" alt="">
+                                    <img src="/heatwave/assets/images/class2.jpg" alt="">
                                 </figure>
                                 <div class="content">
                                     <h3>glute lab</h3>
@@ -64,7 +64,7 @@
                         <div class="col-md-4 col-sm-6">
                             <a href="#" class="classCard">
                                 <figure class="cardImg">
-                                    <img src="/assets/images/class3.jpg" alt="">
+                                    <img src="/heatwave/assets/images/class3.jpg" alt="">
                                 </figure>
                                 <div class="content">
                                     <h3>shoulders & arms</h3>
@@ -74,7 +74,7 @@
                         <div class="col-md-4 col-sm-6">
                             <a href="#" class="classCard">
                                 <figure class="cardImg">
-                                    <img src="/assets/images/class4.jpg" alt="">
+                                    <img src="/heatwave/assets/images/class4.jpg" alt="">
                                 </figure>
                                 <div class="content">
                                     <h3>full body</h3>
@@ -84,7 +84,7 @@
                         <div class="col-md-4 col-sm-6">
                             <a href="#" class="classCard">
                                 <figure class="cardImg">
-                                    <img src="/assets/images/class5.jpg" alt="">
+                                    <img src="/heatwave/assets/images/class5.jpg" alt="">
                                 </figure>
                                 <div class="content">
                                     <h3>back attack</h3>

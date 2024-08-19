@@ -11,7 +11,7 @@
 
             <section class="mainSec">
                 <figure class="bgImg">
-                    <img src="/assets/images/coachingBg.jpg" alt="">
+                    <img src="/heatwave/assets/images/coachingBg.jpg" alt="">
                 </figure>
                 <div class="content">
                     <h1>
@@ -21,7 +21,7 @@
                         <span>WE CALL LIFE</span>
                     </h1>
                 </div>
-                <a href="/" class="badgeBtn">
+                <a href="/heatwave" class="badgeBtn">
                     <span>
                         Back to home
                     </span>
@@ -39,7 +39,7 @@
                         <div class="col-md-4 col-6">
                             <div class="trainingCard">
                                 <figure class="cardImg">
-                                    <img src="/assets/images/trainer1.jpg" alt="">
+                                    <img src="/heatwave/assets/images/trainer1.jpg" alt="">
                                 </figure>
                                 <div class="content">
                                     <h4>Trainer Spot light</h4>
@@ -50,7 +50,7 @@
                         <div class="col-md-4 col-6">
                             <div class="trainingCard">
                                 <figure class="cardImg">
-                                    <img src="/assets/images/trainer2.jpg" alt="">
+                                    <img src="/heatwave/assets/images/trainer2.jpg" alt="">
                                 </figure>
                                 <div class="content">
                                     <h4>Trainer Spot light</h4>
@@ -61,7 +61,7 @@
                         <div class="col-md-4 col-sm-6">
                             <div class="trainingCard">
                                 <figure class="cardImg">
-                                    <img src="/assets/images/trainer3.jpg" alt="">
+                                    <img src="/heatwave/assets/images/trainer3.jpg" alt="">
                                 </figure>
                                 <div class="content">
                                     <h4>Trainer Spot light</h4>

@@ -1,7 +1,7 @@
 <div class="pageWrapper class">
     <section class="mainSec ">
         <figure class="bgImg">
-            <img src="/assets/images/classBg.jpg" alt="">
+            <img src="/heatwave/assets/images/classBg.jpg" alt="">
         </figure>
         <div class="content">
             <h1>
@@ -16,7 +16,7 @@
                 </span>
             </h1>
         </div>
-        <a href="/classes" class="badgeBtn">
+        <a href="/heatwave/classes/" class="badgeBtn">
             <span>
                 explore Classes
             </span>

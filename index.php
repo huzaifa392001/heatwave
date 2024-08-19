@@ -4,7 +4,7 @@
         <div class="preloaderCont">
             <div class="preloaderBg"></div>
             <figure class="preloaderImg">
-                <img src="/assets/images/preloader-logo.png" alt="">
+                <img src="/heatwave/assets/images/preloader-logo.png" alt="">
                 <div class="preloaderMask"></div>
                 <div class="logoIcon">
                     <?php include './includes/preloadersvg.php' ?>

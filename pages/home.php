@@ -1,13 +1,13 @@
 <div class="pageWrapper home active">
     <section class="mainSec  ">
         <figure class="bgImg">
-            <img src="/assets/images/mainBg.jpg" alt="">
+            <img src="/heatwave/assets/images/mainBg.jpg" alt="">
         </figure>
         <figure class="frontImg">
             <h1>
                 strengthen
             </h1>
-            <img src="/assets/images/frontBg.png" alt="">
+            <img src="/heatwave/assets/images/frontBg.png" alt="">
         </figure>
         <div class="content">
             <h1>

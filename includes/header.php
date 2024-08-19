@@ -10,11 +10,11 @@ if (file_exists(dirname(__FILE__) . '/../includes/config.php')) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+    <link rel="icon" href="/heatwave/assets/images/favicon.png" type="image/png">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/assets/css/plugins.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/heatwave/assets/css/plugins.css">
+    <link rel="stylesheet" href="/heatwave/assets/css/styles.css">
+    <link rel="stylesheet" href="/heatwave/assets/css/responsive.css">
 
     <?php
     // Define the titles for different pages
