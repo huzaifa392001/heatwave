@@ -16,6 +16,10 @@
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1200px;
     }
+
+    .mainSec .frontImg img {
+        margin: 0;
+    }
 }
 
 @media (max-width: 1366px) {
@@ -217,6 +221,7 @@
 
     .coaching .mainSec .content h1 {
         font-size: 8rem;
+        align-items: center;
     }
 
     .coaching .mainSec .content {
@@ -291,11 +296,28 @@
 
     .home .mainSec .content h1 {
         text-align: center;
-        font-size: 8rem;
+        font-size: 5rem;
         line-height: 1;
+        font-weight: 900;
     }
 
     .join .mainSec h1 {
         font-size: 4rem;
+    }
+}
+
+@media (max-width: 399.98px) {
+    .coaching .mainSec .content h1, .class .mainSec .content h1 {
+        font-size: 5rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        line-height: 1;
+        width: 98%;
+    }
+
+    .plans .mainSec .content h1 {
+        font-size: 20rem;
     }
 }
